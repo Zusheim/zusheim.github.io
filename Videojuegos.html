@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina de Videojuegos</title>
+    <style>
+
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf8ad;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 2em;
+            background-color: #fff;
+            margin: 1em;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        h3 {
+            color: #444;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .juego {
+            margin-bottom: 1em;
+            padding-bottom: 1em;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .juego img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1em;
+        }
+
+        .noticia {
+            margin-bottom: 1em;
+            padding-bottom: 1em;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+        }
+
+        .noticia img {
+            max-width: 100px;
+            border-radius: 5px;
+            margin-right: 1em;
+        }
+
+        .categoria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .categoria div {
+            flex: 0 1 calc(30% - 1em);
+            margin: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .evento {
+            margin-bottom: 1em;
+            padding-bottom: 1em;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+        }
+
+        .evento img {
+            max-width: 150px;
+            border-radius: 5px;
+            margin-right: 1em;
+        }
+
+        form {
+            margin-top: 2em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 0.5em;
+        }
+
+        form input, form textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 0.8em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Videojuegos</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#juegos">Juegos</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#analisis">Análisis</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio">
+        <h2>Bienvenido a la Experiencia Gamer</h2>
+        <p>Explora el fascinante mundo de los videojuegos, donde la emoción y la creatividad se encuentran. Mantente actualizado con las últimas tendencias y novedades.</p>
+    </section>
+
+    <section id="juegos" class="categoria">
+        <h2>Últimos Juegos</h2>
+        <div class="juego">
+            <img src="https://th.bing.com/th/id/R.43160219369ade69b16f1a4617b9d62c?rik=0CzWm1uyp5JhHg&pid=ImgRaw&r=0" alt="Assassin's Creed Valhalla">
+            <h3>Assassin's Creed Valhalla</h3>
+            <p>Embárcate en una aventura vikinga épica con Assassin's Creed Valhalla. Explora mundos abiertos, forja alianzas y vive la historia.</p>
+        </div>
+        <div class="juego">
+            <img src="https://th.bing.com/th/id/OIP.nUsauSqleiLFt05HryjW3AHaHa?rs=1&pid=ImgDetMain" alt="Cyberpunk 2077">
+            <h3>Cyberpunk 2077</h3>
+            <p>Sumérgete en Night City, una metrópolis obsesionada con el poder, la moda y la modificación corporal en Cyberpunk 2077. ¿Sobrevivirás en este futuro distópico?</p>
+        </div>
+        <div class="juego">
+            <img src="https://th.bing.com/th/id/R.498ec7d73873e0a9dec111720ecb7ad2?rik=gOgswrOKJZPkyw&riu=http%3a%2f%2fimages.nintendolife.com%2f8ad186ffe2a4f%2f1280x720.jpg&ehk=WjHaiaSiRMc5fudFkpAkfV5NF2HGTdtH%2blocFhwUFO0%3d&risl=&pid=ImgRaw&r=0" alt="The Legend of Zelda: Breath of the Wild">
+            <h3>The Legend of Zelda: Breath of the Wild</h3>
+            <p>Explora el vasto reino de Hyrule y enfréntate a desafíos en The Legend of Zelda: Breath of the Wild. Descubre secretos, resuelve acertijos y libera tu espíritu aventurero.</p>
+        </div>
+        <div class="juego">
+            <img src="https://sm.ign.com/t/ign_latam/screenshot/default/fifa22-1_wd6h.2560.jpg" alt="FIFA 22">
+            <h3>FIFA 22</h3>
+            <p>Vive la emoción del fútbol con FIFA 22. Con gráficos realistas y una jugabilidad mejorada, te sentirás en el campo de juego.</p>
+        </div>
+    </section>
+
+    <section id="noticias" class="categoria">
+        <h2>Noticias y Novedades</h2>
+        <div class="noticia">
+            <img src="https://th.bing.com/th/id/OIP.yNUsJt9bAt5b1-G3FD_JqQHaEk?rs=1&pid=ImgDetMain" alt="Evento de Lanzamiento de PlayStation 5">
+            <h3>Evento de Lanzamiento de PlayStation 5</h3>
+            <p>Descubre los detalles del esperado lanzamiento de la PlayStation 5. Conoce las características, los juegos de lanzamiento y las primeras impresiones de los jugadores.</p>
+        </div>
+        <div class="noticia">
+            <img src="https://th.bing.com/th/id/OIP.DZUSxdov8kteSxKpYxixGQHaEK?rs=1&pid=ImgDetMain" alt="Actualización de Fortnite: Capítulo 3">
+            <h3>Actualización de Fortnite: Capítulo 3</h3>
+            <p>Fortnite presenta su última actualización con el emocionante Capítulo 3. Nuevos mapas, armas y sorpresas te esperan en esta nueva temporada.</p>
+        </div>
+        <div class="noticia">
+            <img src="https://fundacioncarlosslim.org/wp-content/uploads/2019/03/capacitate-para-el-empleo-desarrollador-de-videojuegos.jpg" alt="Entrevista con Desarrolladores de Videojuegos">
+            <h3>Entrevista con Desarrolladores de Videojuegos</h3>
+            <p>Conoce las historias detrás de tus juegos favoritos. Entrevistamos a los desarrolladores para obtener información exclusiva sobre el proceso creativo y los desafíos enfrentados.</p>
+        </div>
+        <div class="noticia">
+            <img src="https://living-las-vegas.com/content/uploads/Posters-SC-1-1-2048x1779.jpeg" alt="Anuncio de Evento Gaming Expo">
+            <h3>Anuncio de Evento Gaming Expo</h3>
+            <p>¡Prepárate para la Gaming Expo! Descubre las últimas innovaciones, participa en torneos, conoce a tus desarrolladores favoritos y sumérgete en la cultura gamer.</p>
+        </div>
+    </section>
+
+    <section id="analisis" class="categoria">
+        <h2>Análisis</h2>
+        <div>
+            <h3>Análisis de Juego: The Witcher 3</h3>
+            <p>Exploramos a fondo el mundo de The Witcher 3: Wild Hunt. Descubre detalles sobre la narrativa, los gráficos y la jugabilidad en este análisis completo.</p>
+        </div>
+        <div>
+            <h3>Comparativa de Consolas: PS5 vs Xbox Series X</h3>
+            <p>Analizamos las características, el rendimiento y los juegos exclusivos de las consolas de próxima generación: PlayStation 5 y Xbox Series X. ¿Cuál es la mejor opción para ti?</p>
+        </div>
+        <div>
+            <h3>Revisión de Accesorios Gaming</h3>
+            <p>Desde teclados hasta auriculares, presentamos una revisión detallada de los mejores accesorios gaming disponibles en el mercado. Mejora tu experiencia de juego con estos dispositivos.</p>
+        </div>
+    </section>
+
+    <section id="eventos" class="categoria">
+        <h2>Próximos Eventos</h2>
+        <div>
+            <h3>Torneo de eSports: League of Legends</h3>
+            <p>Participa en el próximo torneo de League of Legends. Prepárate para la competencia, gana premios y demuestra tu habilidad en el campo de batalla virtual.</p>
+        </div>
+        <div>
+            <h3>Presentación de Nuevos Juegos Indie</h3>
+            <p>Descubre la creatividad de los desarrolladores independientes en nuestra presentación de nuevos juegos indie. Apoya la innovación y disfruta de experiencias únicas.</p>
+        </div>
+        <div>
+            <h3>Conferencia de Realidad Virtual</h3>
+            <p>Sumérgete en el emocionante mundo de la realidad virtual en nuestra próxima conferencia. Explora las últimas tecnologías y descubre cómo VR está transformando la industria de los videojuegos.</p>
+        </div>
+    </section>
+
+    <section id="analisis" class="categoria">
+        <h2>Análisis</h2>
+        <div>
+            <h3>Análisis de Juego: The Witcher 3</h3>
+            <p>Exploramos a fondo el mundo de The Witcher 3: Wild Hunt. Descubre detalles sobre la narrativa, los gráficos y la jugabilidad en este análisis completo.</p>
+        </div>
+        <div>
+            <h3>Comparativa de Consolas: PS5 vs Xbox Series X</h3>
+            <p>Analizamos las características, el rendimiento y los juegos exclusivos de las consolas de próxima generación: PlayStation 5 y Xbox Series X. ¿Cuál es la mejor opción para ti?</p>
+        </div>
+        <div>
+            <h3>Revisión de Accesorios Gaming</h3>
+            <p>Desde teclados hasta auriculares, presentamos una revisión detallada de los mejores accesorios gaming disponibles en el mercado. Mejora tu experiencia de juego con estos dispositivos.</p>
+        </div>
+    </section>
+
+    <section id="eventos" class="categoria">
+        <h2>Próximos Eventos</h2>
+        <div class="evento">
+            <img src="https://th.bing.com/th/id/OIP.FAUSfpD8rjaTjXt7d2hXLwHaE8?rs=1&pid=ImgDetMain" alt="Torneo de eSports: League of Legends">
+            <div>
+                <h3>Torneo de eSports: League of Legends</h3>
+                <p>Participa en el próximo torneo de League of Legends. Prepárate para la competencia, gana premios y demuestra tu habilidad en el campo de batalla virtual.</p>
+            </div>
+        </div>
+        <div class="evento">
+            <img src="https://th.bing.com/th/id/OIP.bPNIATpnYM78UxXoic0PSQHaE3?rs=1&pid=ImgDetMain" alt="Presentación de Nuevos Juegos Indie">
+            <div>
+                <h3>Presentación de Nuevos Juegos Indie</h3>
+                <p>Descubre la creatividad de los desarrolladores independientes en nuestra presentación de nuevos juegos indie. Apoya la innovación y disfruta de experiencias únicas.</p>
+            </div>
+        </div>
+        <div class="evento">
+            <img src="https://www.virtualand.pe/wp-content/uploads/2021/06/6-consejos-para-lograr-exito-en-tus-conferencias-virtuales-1280x663.jpg" alt="Conferencia de Realidad Virtual">
+            <div>
+                <h3>Conferencia de Realidad Virtual</h3>
+                <p>Sumérgete en el emocionante mundo de la realidad virtual en nuestra próxima conferencia. Explora las últimas tecnologías y descubre cómo VR está transformando la industria de los videojuegos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta, sugerencia o simplemente quieres decir hola? ¡Estamos aquí para escucharte!</p>
+        <form action="mailto:karim.egure@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+</body>
+</html>
